@@ -26,8 +26,6 @@ cd spring-boot-sample
 Access
 --------
 
-Access with browser.
-
 ### Select
 
 ```
