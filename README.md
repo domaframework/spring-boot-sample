@@ -3,6 +3,8 @@ Doma  with Spring Boot
 
 This sample shows how easy to integrate [Doma][doma] with  [Spring Boot][spring-boot] .
 
+Java 8 is needed to run this sample.
+
 Clone
 --------
 
