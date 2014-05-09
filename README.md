@@ -50,6 +50,21 @@ JSON Response:
 [{"id":1,"name":"Kyoto"},{"id":2,"name":"New York"},{"id":3,"name":"London"}]
 ```
 
+Edit with Eclipse
+--------
+
+### About Eclipse Version
+
+Use Kepler SR2 (4.3.2) and a feature patch.
+
+For further details ,  see https://wiki.eclipse.org/JDT/Eclipse_Java_8_Support_For_Kepler
+
+### Generate all Eclipse files
+
+```sh
+./gradlew eclipse
+```
+
 License
 -------
 
