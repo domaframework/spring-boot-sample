@@ -12,12 +12,12 @@ import sample.DataSourceAutowireable;
 @DataSourceAutowireable
 public interface CityDao {
 
-	@Select
-	City selectById(Integer id);
+    @Select
+    City selectById(Integer id);
 
-	@Select
-	List<City> selectAll();
+    @Select
+    List<City> selectAll();
 
-	@Update
-	int update(City city);
+    @Update
+    int update(City city);
 }
