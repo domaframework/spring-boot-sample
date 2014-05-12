@@ -6,10 +6,10 @@ import org.seasar.doma.Dao;
 import org.seasar.doma.Select;
 import org.seasar.doma.Update;
 
-import sample.DataSourceAutowireable;
+import sample.ConfigAutowireable;
 
 @Dao
-@DataSourceAutowireable
+@ConfigAutowireable
 public interface CityDao {
 
     @Select

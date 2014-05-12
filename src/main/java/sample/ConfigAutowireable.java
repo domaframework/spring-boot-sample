@@ -9,5 +9,5 @@ import org.springframework.stereotype.Component;
 @AnnotateWith(annotations = {
         @Annotation(target = AnnotationTarget.CLASS, type = Component.class),
         @Annotation(target = AnnotationTarget.CONSTRUCTOR, type = Autowired.class) })
-public @interface DataSourceAutowireable {
+public @interface ConfigAutowireable {
 }
