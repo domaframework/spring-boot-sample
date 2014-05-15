@@ -23,7 +23,7 @@ public class ApplicationConfiguration {
         DataSource dataSource = new EmbeddedDatabaseBuilder()
                 .setType(EmbeddedDatabaseType.H2).addScript("import.sql")
                 .build();
-        return new TransactionAwareDataSourceProxy(dataSource);
+        return dataSource;
     }
 
     @Bean
@@ -47,7 +47,7 @@ public class ApplicationConfiguration {
 
             @Override
             public DataSource getDataSource() {
-                return dataSource();
+                return new TransactionAwareDataSourceProxy(dataSource());
             }
         };
     }
