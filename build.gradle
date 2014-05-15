@@ -36,6 +36,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-jdbc")
     compile("org.seasar.doma:doma:${version}")
+    compile("javax.inject:javax.inject:1")
     compile("com.h2database:h2")
     testCompile("junit:junit")
 }
