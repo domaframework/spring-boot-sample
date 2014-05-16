@@ -3,6 +3,8 @@ package sample;
 import javax.sql.DataSource;
 
 import org.seasar.doma.jdbc.Config;
+import org.seasar.doma.jdbc.NoCacheSqlFileRepository;
+import org.seasar.doma.jdbc.SqlFileRepository;
 import org.seasar.doma.jdbc.dialect.Dialect;
 import org.seasar.doma.jdbc.dialect.H2Dialect;
 import org.springframework.context.annotation.Bean;
@@ -37,6 +39,11 @@ public class ApplicationConfiguration {
     }
 
     @Bean
+    public SqlFileRepository sqlFileRepository() {
+        return new NoCacheSqlFileRepository();
+    }
+
+    @Bean
     public Config config() {
         return new Config() {
 
@@ -49,7 +56,11 @@ public class ApplicationConfiguration {
             public DataSource getDataSource() {
                 return dataSource();
             }
+
+            @Override
+            public SqlFileRepository getSqlFileRepository() {
+                return sqlFileRepository();
+            }
         };
     }
-
 }
