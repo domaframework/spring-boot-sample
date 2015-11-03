@@ -23,7 +23,7 @@ public class ApplicationConfiguration {
     @Bean
     public DataSource dataSource() {
         DataSource dataSource = new EmbeddedDatabaseBuilder()
-                .setType(EmbeddedDatabaseType.H2).addScript("import.sql")
+                .setType(EmbeddedDatabaseType.H2)
                 .build();
         return new TransactionAwareDataSourceProxy(dataSource);
     }
