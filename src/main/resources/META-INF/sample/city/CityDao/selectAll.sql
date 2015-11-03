@@ -1,1 +1,1 @@
-select /*%expand*/* from city
+select /*%expand*/* from city order by id asc
