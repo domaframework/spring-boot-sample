@@ -38,6 +38,7 @@ dependencies {
     compile("org.seasar.doma:doma:${version}")
     compile("com.h2database:h2")
     testCompile("junit:junit")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
 task wrapper(type: Wrapper) {
