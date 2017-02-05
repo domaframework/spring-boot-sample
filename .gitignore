@@ -10,3 +10,4 @@ target/
 .factorypath
 *.iml
 .idea
+out
