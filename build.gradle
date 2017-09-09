@@ -15,7 +15,7 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 
-version = '2.17.0-SNAPSHOT'
+version = '2.17.0'
 
 processResources.destinationDir = compileJava.destinationDir
 compileJava.dependsOn processResources
